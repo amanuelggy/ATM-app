@@ -1,6 +1,6 @@
 package com.atmapp.com.atm.transactions.domains;
 
-public class CashDeposit extends Depoit {
+public class CashDeposit extends Deposit {
 	private Integer cashDepoitLimit;
 	
 	public CashDeposit() {

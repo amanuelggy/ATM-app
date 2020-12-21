@@ -1,7 +1,8 @@
 package com.atmapp.com.atm.transactions.enums;
 
 public enum TransactionStatus {
-	SACCESS,
+	INITIATE,
+	SUCCESS,
 	FAILURE,
 	BLOCKED,
 	FULL,

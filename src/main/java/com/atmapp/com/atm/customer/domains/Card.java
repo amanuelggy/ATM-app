@@ -1,13 +1,27 @@
 package com.atmapp.com.atm.customer.domains;
 
-public class Card extends Customer {
+import java.time.ZonedDateTime;
+
+import com.atmapp.com.atm.customer.enums.CardType;
+
+public class Card {
+	private Long cardId;
 	private String cardNumber;
 	private String customerName;
-	private String cardExpiry;
+	private ZonedDateTime cardExpiry;
 	private int pin;
+	private CardType cardType;
 	
 	public Card() {
 		
+	}
+	
+	public Long getCardId() {
+		return cardId;
+	}
+
+	public void setCardId(Long cardId) {
+		this.cardId = cardId;
 	}
 
 	public String getCardNumber() {
@@ -26,11 +40,11 @@ public class Card extends Customer {
 		this.customerName = customerName;
 	}
 
-	public String getCardExpiry() {
+	public ZonedDateTime getCardExpiry() {
 		return cardExpiry;
 	}
 
-	public void setCardExpiry(String cardExpiry) {
+	public void setCardExpiry(ZonedDateTime cardExpiry) {
 		this.cardExpiry = cardExpiry;
 	}
 
@@ -40,6 +54,14 @@ public class Card extends Customer {
 
 	public void setPin(int pin) {
 		this.pin = pin;
+	}
+
+	public CardType getCardType() {
+		return cardType;
+	}
+
+	public void setCardType(CardType cardType) {
+		this.cardType = cardType;
 	}
 	
 }

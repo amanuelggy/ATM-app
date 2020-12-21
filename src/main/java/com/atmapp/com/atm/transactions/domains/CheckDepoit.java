@@ -1,6 +1,6 @@
 package com.atmapp.com.atm.transactions.domains;
 
-public class CheckDepoit extends Depoit {
+public class CheckDepoit extends Deposit {
 	private String checkNumber;
 	private String bankCode;
 	
